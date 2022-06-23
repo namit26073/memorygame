@@ -1,9 +1,49 @@
 <!-- In HTML Comments are written like this -->
 <!-- They can all be removed for your apps -->
-<!doctype html> <!-- This first line tells browsers to expect modern standard html 5 -->
-<html lang="en-gb"> <!-- This is indicates the page is written in British English, useful for accessibility -->
-<meta charset="utf-8"> <!-- This indicates how the file is encoded. utf-8 is standard -->
-<title>Your Web-app Title</title> <!-- All pages need a title, this will be displayed in the browser's title bar -->
-<link rel="stylesheet" href="default.css"> <!-- Import style sheet – default.css -->
-<link rel="icon" href="./assets/favicon.png"> <!-- Import 'Favorites Icon' – favicon.png -->
-<script type="module" src="main.js"></script> <!-- Load the main script. Must be type="module". Have only one of these -->
+<!DOCTYPE html>
+<!-- This first line tells browsers to expect modern standard html 5 -->
+<html lang="en-gb">
+  <!-- This is indicates the page is written in British English, useful for accessibility -->
+  <meta charset="utf-8" />
+  <!-- This indicates how the file is encoded. utf-8 is standard -->
+  <title>Memory Card Game</title>
+  <!-- All pages need a title, this will be displayed in the browser's title bar -->
+  <link rel="stylesheet" href="default.css" />
+  <!-- Import style sheet – default.css -->
+  <link rel="icon" href="./assets/favicon.png" />
+  <!-- Import 'Favorites Icon' – favicon.png -->
+  <script type="module" src="main.js"></script>
+  <!-- Load the main script. Must be type="module". Have only one of these -->
+
+  <body>
+    <header class="header">
+      <h1 id="title">Memory Card Game</h1>
+      <a href="/docs/">API Documentation</a>
+    </header>
+    <h2 class="p1">
+      Player 1 Stats<br />
+      <br />
+      Remaining Lives: <span class="p1LivesCount"></span>
+      <br />
+      <br />
+      Current Points Scored:
+      <scoreCount1 class="p1ScoreCount"></scoreCount1>
+    </h2>
+    <h2 class="p2">
+      Player 2 Stats<br />
+      <br />
+      Remaining Lives: <selector class="p2LivesCount"></selector>
+      <br />
+      <br />
+      Current Points Scored: <scoreCount2 class="p2ScoreCount"></scoreCount2>
+    </h2>
+    <div class="rules">
+      Rules: <br />
+      Player 1 starts by picking 2 cards and if they match you gain 5 points. If
+      they dont match, you lose a life. After the player turns 2 cards the other
+      player has their turn. Keep playing until both players have no lives.
+      Person with more points wins.
+    </div>
+    <section></section>
+  </body>
+</html>
